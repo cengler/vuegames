@@ -1,5 +1,5 @@
 <template>
-  <div class="card" :class="flippedStyles" @click="selectCard">
+  <div class="card shadow-5" :class="flippedStyles" @click="selectCard">
     <div class="card-face is-front">
       <img
         class="card-image"
@@ -63,6 +63,7 @@ export default {
   position: relative;
   transition: 0.5s transform ease-in;
   transform-style: preserve-3d;
+  border-radius: 10px;
 }
 
 .card.is-flipped {

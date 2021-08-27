@@ -25,9 +25,9 @@ export default function createGame(deck) {
 
   const status = computed(() => {
     if (matchesFound.value === 8) {
-      return 'Player wins!'
+      return 'Ganaste!'
     } else {
-      return `Matches found: ${matchesFound.value}`
+      return `Encontradas: ${matchesFound.value}`
     }
   })
 

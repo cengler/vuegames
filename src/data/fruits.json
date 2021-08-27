@@ -5,12 +5,12 @@
         {
             "author": "macrovector / Freepik",
             "url": "http://www.freepik.com",
-            "component": "Objects"
+            "component": "Objetos"
         },
         {
             "author": "dooder / Freepik",
             "url": "http://www.freepik.com",
-            "component": "Background"
+            "component": "Fondo"
         }
     ],
     "colors": {
