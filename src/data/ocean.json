@@ -1,0 +1,31 @@
+{
+    "title": "mar-juego-titulo.png",
+    "deckFace": "mar-juego-carta.png",
+    "bg": "mar-bg.png",
+    "deck": [
+        "mar-caballito",
+        "mar-cangrejo",
+        "mar-dorado",
+        "mar-estrella",
+        "mar-pulpo",
+        "mar-tortuga",
+        "mar-zanclus",
+        "mar-azul"
+    ],
+    "licences": [
+        {
+            "author": "TODO / Freepik",
+            "url": "http://www.freepik.com",
+            "component": "Objetos"
+        },
+        {
+            "author": "TODO / Freepik",
+            "url": "http://www.freepik.com",
+            "component": "Fondo"
+        }
+    ],
+    "colors": {
+        "confetti": ["#3333cc", "#aaaacc"],
+        "button": "#3333cc"
+    }
+}

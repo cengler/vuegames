@@ -1,8 +1,10 @@
 <template>
+  <div :style="{ backgroundImage: 'url(/images/' + bg + ')' }">
   <GameHeader :image="titleImg" />
   <GameStartButton :newPlayer="newPlayer" @start-new-game="startNewGame" :color="buttonColor" />
-  <GameBoard :cardList="cardList" :status="status" @flip-card="flipCard" />
+  <GameBoard :cardList="cardList" :status="status" @flip-card="flipCard" :deckFace="deckFace"/>
   <GameFooter :licences="licences"/>
+  </div>
 </template>
 
 <script>
@@ -14,7 +16,7 @@ import GameFooter from './components/GameFooter'
 import GameHeader from './components/GameHeader'
 import GameBoard from './components/GameBoard'
 import GameStartButton from './components/GameStartButton'
-import fruits from './data/fruits.json'
+import gameData from './data/ocean.json'
 
 export default {
   name: 'App',
@@ -25,7 +27,7 @@ export default {
     GameStartButton
   },
   setup() {
-    const { cardList } = createDeck(fruits.deck)
+    const { cardList } = createDeck(gameData.deck)
     const {
       newPlayer,
       startGame,
@@ -67,7 +69,7 @@ export default {
 
     watch(matchesFound, currentValue => {
       if (currentValue === 8) {
-        launchConfetti(fruits.colors.confetti)
+        launchConfetti(gameData.colors.confetti)
       }
     })
 
@@ -106,9 +108,11 @@ export default {
       status,
       startNewGame,
       newPlayer,
-      titleImg: fruits.title,
-      licences: fruits.licences,
-      buttonColor: fruits.colors.button
+      titleImg: gameData.title,
+      licences: gameData.licences,
+      buttonColor: gameData.colors.button,
+      deckFace: gameData.deckFace,
+      bg: gameData.bg
     }
   }
 }
@@ -123,7 +127,6 @@ body {
 }
 
 html {
-  background-image: url('/images/frutas-juego-bg.png');
   background-color: #00070c;
 }
 

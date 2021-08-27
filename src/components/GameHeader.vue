@@ -1,6 +1,6 @@
 <template>
   <div class="wrapperHeader">
-    <div class="header shadow-5" :style="{ color: 'white', backgroundImage: 'url(' + image + ')' }">
+    <div class="header shadow-5" :style="{ backgroundImage: 'url(/images/' + image + ')' }">
     </div> 
   </div>
 </template>

@@ -9,7 +9,8 @@
       />
       <img v-if="matched" src="/images/checkmark.svg" class="icon-checkmark" />
     </div>
-    <div class="card-face is-back"></div>
+    <div class="card-face is-back"
+         :style="{ backgroundImage: 'url(/images/' + deckFace + ')' }"></div>
   </div>
 </template>
 
@@ -33,6 +34,10 @@ export default {
     visible: {
       type: Boolean,
       default: false
+    },
+    deckFace: {
+      type: String,
+      required: true
     }
   },
   setup(props, context) {
@@ -89,7 +94,6 @@ export default {
 
 .card-face.is-back {
   background-size: 100%;
-  background-image: url('/images/frutas-juego-carta.png');
   color: white;
 }
 

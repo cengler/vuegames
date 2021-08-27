@@ -7,6 +7,7 @@
       :value="card.value"
       :visible="card.visible"
       :position="card.position"
+      :deckFace="deckFace"
       @select-card="selectCard"
     />
   </transition-group>
@@ -23,6 +24,10 @@ export default {
   props: {
     cardList: {
       type: Array,
+      required: true
+    },
+    deckFace: {
+      type: String,
       required: true
     },
     status: {

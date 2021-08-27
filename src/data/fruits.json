@@ -1,6 +1,17 @@
 {
-    "title": "/images/frutas-juego-titulo.png",
-    "deck": ["frutas-anana", "frutas-limon", "frutas-sandia", "frutas-naranja", "frutas-frutilla", "frutas-banana", "frutas-kiwi", "frutas-manzana"],
+    "title": "frutas-juego-titulo.png",
+    "deckFace": "frutas-juego-carta.png",
+    "bg": "frutas-bg.png",
+    "deck": [
+        "frutas-anana",
+        "frutas-limon",
+        "frutas-sandia",
+        "frutas-naranja",
+        "frutas-frutilla",
+        "frutas-banana",
+        "frutas-kiwi",
+        "frutas-manzana"
+    ],
     "licences": [
         {
             "author": "macrovector / Freepik",
