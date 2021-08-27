@@ -1,0 +1,20 @@
+{
+    "title": "/images/frutas-juego-titulo.png",
+    "deck": ["frutas-anana", "frutas-limon", "frutas-sandia", "frutas-naranja", "frutas-frutilla", "frutas-banana", "frutas-kiwi", "frutas-manzana"],
+    "licences": [
+        {
+            "author": "macrovector / Freepik",
+            "url": "http://www.freepik.com",
+            "component": "Objects"
+        },
+        {
+            "author": "dooder / Freepik",
+            "url": "http://www.freepik.com",
+            "component": "Background"
+        }
+    ],
+    "colors": {
+        "confetti": ["#cc2353", "#fd7399"],
+        "button": "#fcd227"
+    }
+}

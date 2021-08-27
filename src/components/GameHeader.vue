@@ -1,6 +1,6 @@
 <template>
   <div class="wrapperHeader">
-    <div class="header" :style="{ backgroundImage: 'url(' + image + ') repeat-x 0 0' }">
+    <div class="header" :style="{ color: 'white', backgroundImage: 'url(' + image + ')' }">
     </div> 
   </div>
 </template>
